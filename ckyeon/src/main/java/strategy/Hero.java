@@ -3,7 +3,7 @@ package strategy;
 import strategy.fly.Fly;
 import strategy.weapon.Weapon;
 
-public abstract class Hero {
+public class Hero {
 
     private final Fly fly;
     private final String name;
@@ -23,6 +23,7 @@ public abstract class Hero {
 
     public void attack() {
         weapon.attack();
+        System.out.println();
     }
 
     private void sayHello() {
